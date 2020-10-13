@@ -69,12 +69,12 @@ h3{
     backdrop-filter: blur(4px);
     border-radius: 9px;
     margin-top: 2%;
-    max-width: 230px;
+    max-width: 200px;
 
 }
 #social a {
 	margin-top: 10px;
-    padding: 20px;
+    padding: 7px;
     align-items: center;
     align-self: center;
 	
