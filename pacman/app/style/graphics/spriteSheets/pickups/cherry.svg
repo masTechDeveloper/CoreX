@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   fill="none"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="cherry.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="53.125"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <path
+     d="M2 7V11H3V12H6V9H7V8H8V7H7V6H3V7H2Z"
+     fill="#FF0000"
+     id="path2"
+     style="fill:#000000" />
+  <path
+     d="M3 10V9H4V10H5V11H4V10H3Z"
+     fill="#E0DDFF"
+     id="path4"
+     style="fill:#ffffff" />
+  <path
+     d="M6 8H5V7H6V6H7V5H8V4H10V3H12V2H14V4H12V6H11V7H10V10H9V7H10V6H11V4H10V5H8V6H7V7H6V8Z"
+     fill="#DE9751"
+     id="path6"
+     style="fill:#999999" />
+  <path
+     d="M10 8V10H9V8H8V9H7V13H8V14H12V13H13V9H12V8H10Z"
+     fill="#FF0000"
+     id="path8"
+     style="fill:#000000" />
+  <path
+     d="M8 12V11H9V12H10V13H9V12H8Z"
+     fill="#E0DDFF"
+     id="path10"
+     style="fill:#ffffff" />
+</svg>

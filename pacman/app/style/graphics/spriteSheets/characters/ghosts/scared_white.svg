@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="16"
+   viewBox="0 0 32 16"
+   fill="none"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="scared_white.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="32.5625"
+     inkscape:cx="16"
+     inkscape:cy="8"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M24 15H23V14H22V13H21V14H20V15H18V14H17V7H18V4H19V3H20V2H22V1H24H26V2H28V3H29V4H30V7H31V14H30V15H28V14H27V13H26V14H25V15H24Z"
+     fill="#E0DDFF"
+     id="path2"
+     style="fill:#999999" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M21 7V5H23V7H21ZM25 7V5H27V7H25ZM18 11V10H19V11H18ZM21 10H19V9H21V10ZM23 10V11H21V10H23ZM25 10H24H23V9H24H25V10ZM27 10V11H25V10H27ZM29 10H27V9H29V10ZM29 10H30V11H29V10Z"
+     fill="#FF0000"
+     id="path4"
+     style="fill:#000000" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M1 15V7H2V4H3V3H4V2H6V1H8H10V2H12V3H13V4H14V7H15V15H14V14H13V13H12V14H11V15H9V13H8H7V15H5V14H4V13H3V14H2V15H1Z"
+     fill="#E0DDFF"
+     id="path6"
+     style="fill:#999999" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M5 7V5H7V7H5ZM9 7V5H11V7H9ZM2 11V10H3V11H2ZM5 10H3V9H5V10ZM7 10V11H5V10H7ZM9 10H8H7V9H8H9V10ZM11 10V11H9V10H11ZM13 10H11V9H13V10ZM13 10H14V11H13V10Z"
+     fill="#FF0000"
+     id="path8"
+     style="fill:#000000" />
+</svg>
