@@ -1,148 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-142539004-1'></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<html lang="en">
 
-      gtag('config', 'UA-142539004-1');
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>CoreX.Finance</title>
+</head>
 
-    <script src='build/app.js'></script>
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
-    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons'
-      rel='stylesheet'>
-    <title>Pacman</title>
-  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <img id="nav-logo" src="images/logo.png" width="130" height="30"
+        class="d-inline-block align-top" alt="" loading="lazy"> CoreX.Finance</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <body>
-    <div id='overflow-mask' class='overflow-mask'>
-      <img id='backdrop' class='backdrop' src='app/style/graphics/backdrop.png'>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">SD Event<span class="sr-only">(current)</span></a>
+        </li>
+        <li><a class="nav-link" href="pacman/index.html">Play Pacman!</a></li>
 
-      <div id='fps-display' class='fps-display'></div>
-      <div id='preload-div' class='preload-div'></div>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Staking</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
 
-      <div id='main-menu-container' class='main-menu-container'>
-        <img id='logo' class='logo' src='app/style/graphics/pacman_logo.png'>
-        <button id='game-start' class='game-start'>
-          PLAY
-        </button>
-      </div>
-
-      <div class='header-buttons'>
-        <button>
-          <i id='pause-button' class='material-icons'>
-            pause
-          </i>
-        </button>
-        <button>
-          <i id='sound-button' class='material-icons'></i>
-        </button>
-      </div>
-
-      <div id='paused-text' class='paused-text'>
-        PAUSED
-      </div>
-
-      <div id='game-ui' class='game-ui'>
-        <div id='row-top' class='row top'>
-          <div class='column _25'>
-            <div class='one-up'>1UP</div>
-            <div id='points-display'></div>
-          </div>
-          <div class='column _50'>
-            <div>HIGH SCORE</div>
-            <div id='high-score-display'></div>
-          </div>
-        </div>
-
-        <div id='maze' class='maze'>
-          <img id='maze-img' class='maze-img' src='app/style/graphics/spriteSheets/maze/maze_blue.svg'>
-          <div id='maze-cover' class='maze-cover'></div>
-          <div id='dot-container'></div>
-          <p id='pacman' class='pacman'></p>
-          <p id='pacman-arrow' class='pacman'></p>
-          <p id='clyde' class='ghost'></p>
-          <p id='inky' class='ghost'></p>
-          <p id='pinky' class='ghost'></p>
-          <p id='blinky' class='ghost'></p>
-        </div>
-
-        <div id='bottom-row' class='row bottom'>
-          <div id='extra-lives' class='extra-lives'></div>
-          <div id='fruit-display' class='fruit-display'></div>
-        </div>
-      </div>
-
-      <div id='movement-buttons' class='movement-buttons'>
-        <div class='row'>
-          <button id='button-up' class='button-up'>
-            <i class='material-icons'>keyboard_arrow_up</i>
-          </button>
-        </div>
-        <div class='row'>
-          <button id='button-left' class='button-left'>
-            <i class='material-icons'>keyboard_arrow_left</i>
-          </button>
-          <button id='button-right' class='button-right'>
-            <i class='material-icons'>keyboard_arrow_right</i>
-          </button>
-        </div>
-        <div class='row'>
-          <button id='button-down' class='button-down'>
-            <i class='material-icons'>keyboard_arrow_down</i>
-          </button>
-        </div>
-      </div>
-
-      <div id='left-cover' class='loading-cover left'></div>
-      <div id='right-cover' class='loading-cover right'></div>
-      <div id='loading-container' class='loading-container'>
-        <div id='loading-pacman' class='loading-pacman'></div>
-        <div id='loading-dot-mask' class='loading-dot-mask'></div>
-        <div class='loading-dot _5'></div>
-        <div class='loading-dot _10'></div>
-        <div class='loading-dot _15'></div>
-        <div class='loading-dot _20'></div>
-        <div class='loading-dot _25'></div>
-        <div class='loading-dot _30'></div>
-        <div class='loading-dot _35'></div>
-        <div class='loading-dot _40'></div>
-        <div class='loading-dot _45'></div>
-        <div class='loading-dot _50'></div>
-        <div class='loading-dot _55'></div>
-        <div class='loading-dot _60'></div>
-        <div class='loading-dot _65'></div>
-        <div class='loading-dot _70'></div>
-        <div class='loading-dot _75'></div>
-        <div class='loading-dot _80'></div>
-        <div class='loading-dot _85'></div>
-        <div class='loading-dot _90'></div>
-        <div class='loading-dot _95'></div>
-      </div>
-
-      <div id='error-message' class='error-message'>
-        <div class='header'>
-          <div>OOPS!</div>
-          <div class='error-pacman'></div>
-        </div>
-        <div class='body'>
-          We were unable to load the images/sounds needed to play the game.</br></br>
-
-          This could be due to a poor connection, a strict network policy, or
-          by playing on an unsupported browser.
-        </div>
-      </div>
-
-      <script>
-        window.onload = () => {
-          let gameCoordinator = new GameCoordinator();
-        }
-      </script>
+        <button id="Cnct-wallet" class="btn btn-light my-2 my-sm-0" type="submit">Wallet Connect</button>
+      </form>
     </div>
-  </body>
+  </nav>
+  <div class="container">
+    <img id="logo" src="images/logo.png" alt="">
+    <h1>The CoreX Supply Determination Event</h1>
+    <embed class="down" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <p id="demo"></p>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 1, 2020 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+    <embed class="up" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <h3>Total <span>...</span> ETH deposited</h3>
+    <h3>Your contribution: <span>...</span> ETH ( <span>...</span> %)</h3>
+    <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <input id="eth-amount" type="number" placeholder="Amount of ETH...">
+    <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <br>
+    <button type="button" class="btn btn-outline-dark eth-btn">1 ETH</button>
+    <button type="button" class="btn btn-outline-dark eth-btn">5 ETH</button>
+    <button type="button" class="btn btn-outline-dark eth-btn">10 ETH</button>
+    <button type="button" class="btn btn-outline-dark eth-btn">50 ETH</button>
+    <button type="button" class="btn btn-outline-dark eth-btn">MAX</button>
+    <br>
+    <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <button id="deposite-btn" type="button" class="btn btn-outline-dark">Deposit</button>
+    <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    <br>
+    <p>
+      The COREX Supply Determination event not only allows investors to lock their ETH but also mint the supply of the
+      $COREX token according to it's floor price. After the event is over, all deposited ETH will be deposited as
+      liquidity to UniSwap and the mint function will be automatically revoked. ETH depositors will be able to claim
+      their share of LP tokens once the event has ended and liquidity has been added.
+    </p>
+    <div id="social" class="row">
+      <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
+      <a href="https://medium.com/@corex.finance/407173434330"><img src="images/medium.png" alt=""></a>
+      <a href="https://twitter.com/CorexFinance"><img src="images/Twitter.png" alt=""></a>
+      <a href=""><img src="images/telegram.png" alt=""></a>
+      <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
+    </div>
+
+
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
