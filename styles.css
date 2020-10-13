@@ -91,3 +91,14 @@ h3{
  .up {
      transform: rotate(-90deg);
  }
+#logo {
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: transparent;
+}
+h1 {
+    font-size: 2em;
+}
+#nav-logo {
+    margin-top: 5px;
+}
