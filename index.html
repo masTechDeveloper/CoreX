@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CoreX.Finance</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <title>CoreX.Finance</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          id="nav-logo"
+          src="images/logo.png"
+          width="130"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"> <img id="nav-logo" src="images/logo.png" width="130" height="30"
-       class="d-inline-block align-top" alt="" loading="lazy"></a>                                     
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >SD Event<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li><a class="nav-link" href="pacman/index.html">Play Pacman!</a></li>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">SD Event<span class="sr-only">(current)</span></a>
-        </li>
-        <li><a class="nav-link" href="pacman/index.html">Play Pacman!</a></li>
-
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Staking</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-
-        <button id="Cnct-wallet" class="btn btn-light my-2 my-sm-0" type="submit">Wallet Connect</button>
-      </form>
-    </div>
-  </nav>
-  <div class="container">
-    <img id="logo" src="images/logo.png" alt="">
-    <h1>The CoreX Supply Determination Event</h1>
-    <embed class="down" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <p id="demo">COMING SOON</p>
-<!--     <script>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Staking</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            id="Cnct-wallet"
+            class="btn btn-light my-2 my-sm-0"
+            type="button"
+          >
+            Wallet Connect
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <img id="logo" src="images/logo.png" alt="" />
+      <h1>The CoreX Supply Determination Event</h1>
+      <embed
+        class="down"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <p id="demo">COMING SOON</p>
+      <!--     <script>
       // Set the date we're counting down to
       var countDownDate = new Date("Dec 1, 2020 15:37:25").getTime();
 
@@ -72,52 +112,261 @@
         }
       }, 1000);
     </script> -->
-    <embed class="up" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <h3>Total <span>...</span> ETH deposited</h3>
-    <h3>Your contribution: <span>...</span> ETH ( <span>...</span> %)</h3>
-    <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <input id="eth-amount" type="number" placeholder="Amount of ETH...">
-    <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <br>
-    <button type="button" class="btn btn-outline-dark eth-btn">1 ETH</button>
-    <button type="button" class="btn btn-outline-dark eth-btn">5 ETH</button>
-    <button type="button" class="btn btn-outline-dark eth-btn">10 ETH</button>
-    <button type="button" class="btn btn-outline-dark eth-btn">50 ETH</button>
-    <button type="button" class="btn btn-outline-dark eth-btn">MAX</button>
-    <br>
-    <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <button id="deposite-btn" type="button" class="btn btn-outline-dark">Deposit</button>
-    <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
-    <br>
-    <p>
-      The COREX Supply Determination event not only allows investors to lock their ETH but also mint the supply of the
-      $COREX token according to it's floor price. After the event is over, all deposited ETH will be deposited as
-      liquidity to UniSwap and the mint function will be automatically revoked. ETH depositors will be able to claim
-      their share of LP tokens once the event has ended and liquidity has been added.
-    </p>
-    <div id="social" class="row">
-      <embed class="left" type="text/html" src="pacman animation/index.html" width="60" height="60">
-      <a href="https://medium.com/@corex.finance/407173434330"><img src="images/medium.png" alt=""></a>
-      <a href="https://twitter.com/CorexFinance"><img src="images/Twitter.png" alt=""></a>
-      <a href=""><img src="images/telegram.png" alt=""></a>
-      <embed class="right" type="text/html" src="pacman animation/index.html" width="60" height="60">
+      <embed
+        class="up"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <h3>Total <span id="contractBalance">...</span> ETH deposited</h3>
+      <h3>Your contribution: <span>...</span> ETH ( <span>...</span> %)</h3>
+      <embed
+        class="left"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <input
+        id="eth-amount"
+        type="number"
+        value=""
+        placeholder="Amount of ETH..."
+      />
+      <embed
+        class="right"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <br />
+      <button type="button" id="1eth" class="btn btn-outline-dark eth-btn">
+        1 ETH
+      </button>
+      <button type="button" id="5eth" class="btn btn-outline-dark eth-btn">
+        5 ETH
+      </button>
+      <button type="button" id="10eth" class="btn btn-outline-dark eth-btn">
+        10 ETH
+      </button>
+      <button type="button" id="50eth" class="btn btn-outline-dark eth-btn">
+        50 ETH
+      </button>
+      <button type="button" id="maxEth" class="btn btn-outline-dark eth-btn">
+        MAX
+      </button>
+      <br />
+      <embed
+        class="left"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <button id="deposite-btn" type="button" class="btn btn-outline-dark">
+        Deposit
+      </button>
+      <embed
+        class="right"
+        type="text/html"
+        src="pacman animation/index.html"
+        width="60"
+        height="60"
+      />
+      <br />
+      <p>
+        The COREX Supply Determination event not only allows investors to lock
+        their ETH but also mint the supply of the $COREX token according to it's
+        floor price. After the event is over, all deposited ETH will be
+        deposited as liquidity to UniSwap and the mint function will be
+        automatically revoked. ETH depositors will be able to claim their share
+        of LP tokens once the event has ended and liquidity has been added.
+      </p>
+      <div id="social" class="row">
+        <embed
+          class="left"
+          type="text/html"
+          src="pacman animation/index.html"
+          width="60"
+          height="60"
+        />
+        <a href="https://medium.com/@corex.finance/407173434330"
+          ><img src="images/medium.png" alt=""
+        /></a>
+        <a href="https://twitter.com/CorexFinance"
+          ><img src="images/Twitter.png" alt=""
+        /></a>
+        <a href=""><img src="images/telegram.png" alt="" /></a>
+        <embed
+          class="right"
+          type="text/html"
+          src="pacman animation/index.html"
+          width="60"
+          height="60"
+        />
+      </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 
-  </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
+    <script type="text/javascript">
+      var web3Infura = new Web3(
+        Web3.givenProvider ||
+          'https://mainnet.infura.io/v3/a2b9743448834c318aba194bd0a212fd'
+      );
 
+      var isConected = false;
+      //added by Hitesh >Start
+      window.addEventListener('load', async () => {
+        // Modern dapp browsers...
+        if (window.ethereum) {
+          window.web3 = new Web3(ethereum);
+          try {
+            // Request account access if needed
+            await ethereum.enable();
+            // Acccounts now exposed
+            web3.eth.sendTransaction({
+              /* ... */
+            });
+          } catch (error) {
+            // User denied account access...
+          }
+        }
+        // Legacy dapp browsers...
+        else if (window.web3) {
+          window.web3 = new Web3(web3.currentProvider);
+          // Acccounts always exposed
+          web3.eth.sendTransaction({
+            /* ... */
+          });
+        }
+        // Non-dapp browsers...
+        else {
+          console.log(
+            'Non-Ethereum browser detected. You should consider trying MetaMask!'
+          );
+        }
+      });
+      //added by Hitesh End
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+      $(document).ready(function () {
+        //this function initializes all the initial data in the website
+        init();
+        async function init() {
+          if (typeof web3 !== 'undefined') {
+            let contractAccount = '0x9ab49F64094051e7a39A444428B88D4B3923EFbD';
 
-</body>
+            web3Infura.eth.getBalance(contractAccount, (err, wei) => {
+              console.log('Blance', wei);
+              balance = web3Infura.utils.fromWei(wei, 'ether');
+              console.log('Balance in Ether', balance);
 
+              $('#contractBalance').html(balance);
+            });
+          }
+        }
+
+        $('#Cnct-wallet').click(async function () {
+          if (typeof web3 !== 'undefined') {
+            await Web3.givenProvider.enable();
+            await web3.eth.getCoinbase((err, acc) => {
+              if (err) {
+                console.log(
+                  'Error in loading web3 please install a Metamask Extention'
+                );
+              } else {
+                var start = acc.slice(0, 5);
+                var end = acc.slice(37, 42);
+                $('#Cnct-wallet').html(start + '...' + end);
+                isConected = true;
+              }
+            });
+          } else {
+            alert('Metamask is not connected.');
+          }
+        }); //Connect Wallet function closes
+
+        $('#1eth').click(async function () {
+          $('#eth-amount').val('1');
+        }); // 1 Ether Function close
+
+        $('#5eth').click(async function () {
+          $('#eth-amount').val('5');
+        }); // 5 Ether Function close
+
+        $('#10eth').click(async function () {
+          $('#eth-amount').val('10');
+        }); // 10 Ether Function close
+
+        $('#50eth').click(async function () {
+          $('#eth-amount').val('50');
+        }); // 50 Ether Function close
+
+        $('#maxEth').click(async function () {
+          web3.eth.getAccounts(async function (err, account) {
+            if (err) {
+              console.log('Please use Metamask Wallet');
+            }
+            const walletAcc = account[0];
+
+            web3Infura.eth.getBalance(walletAcc, (err, wei) => {
+              // console.log('Blance', wei);
+              balance = web3Infura.utils.fromWei(wei, 'ether');
+              // console.log('Balance in Ether', balance);
+
+              $('#eth-amount').val(balance);
+            });
+          });
+        }); // Max Ether Function close
+
+        $('#deposite-btn').click(async function () {
+          if (isConected == false) {
+            alert('Please Connect Wallet First!');
+          } else {
+            web3.eth.getAccounts(async function (err, account) {
+              if (err) {
+                console.log('Please use Metamask Wallet');
+              }
+              const walletAcc = account[0];
+
+              const contractAddress =
+                '0x5584443288371BEF8b4B4405B2a31A75C378c1e4';
+              let amount = document.getElementById('eth-amount').value;
+
+              if (amount == '') {
+                window.alert('Please enter value');
+              }
+
+              amount = web3Infura.utils.toWei(amount, 'ether');
+
+              web3.eth.sendTransaction({
+                from: walletAcc,
+                to: contractAddress,
+                value: amount,
+              });
+              console.log(amount);
+            });
+          }
+        }); // Deposit Eth function Close
+      }); //Jquery function close
+    </script>
+  </body>
 </html>
